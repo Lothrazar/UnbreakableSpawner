@@ -1,10 +1,7 @@
 package com.lothrazar.unbreakables;
 
-import java.lang.reflect.Field;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -21,17 +18,7 @@ public class UnbreakableMod {
   }
 
   private void setup(final FMLCommonSetupEvent event) {
-    //reflection
-    Field f = ObfuscationReflectionHelper.findField(Block.class, "field_149782_v");//blockHardness
-    f.setAccessible(true);
-    try {
-      f.set(Blocks.SPAWNER, -1);
-    }
-    catch (IllegalArgumentException e) {
-      e.printStackTrace();
-    }
-    catch (IllegalAccessException e) {
-      e.printStackTrace();
-    }
+    // TODO MCP-name: field_235705_i_ -> blockHardness
+    Blocks.SPAWNER.getDefaultState().field_235705_i_ = -1;
   }
 }
