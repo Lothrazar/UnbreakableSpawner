@@ -1,0 +1,16 @@
+[
+{
+  "modid": "unbreakables",
+  "name": "Unbreakable Spawners",
+  "description": "A small mod to make spawners unbreakable",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/unbreakable-spawner",
+  "updateUrl": "",
+  "authorList": ["Lothrazar"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
