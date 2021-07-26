@@ -1,6 +1,6 @@
 package com.lothrazar.unbreakables;
 
-import net.minecraft.block.Blocks;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,7 +16,7 @@ public class UnbreakableMod {
   }
 
   private void setup(final FMLCommonSetupEvent event) {
-    // accesstransformer makes this public -> field_235705_i_
-    Blocks.SPAWNER.getDefaultState().hardness = -1;
+    // accesstransformer makes this public -> destroySpeed
+    Blocks.SPAWNER.defaultBlockState().destroySpeed = -1;
   }
 }
