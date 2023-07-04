@@ -17,7 +17,7 @@ issueTrackerURL="https://github.com/Lothrazar/unbreakable/issues" #optional
 # The modid of the mod
 modId="unbreakables" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="${file.jarVersion}" #mandatory
+version="${mod_version}" #mandatory
  # A display name for the mod
 displayName="Unbreakable Spawners" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -50,6 +50,12 @@ A small mod to make spawners unbreakable
 [[dependencies.unbreakables]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,)"
+    versionRange="[1.20.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tinylightbulbs]]
+    modId="flib"
+    mandatory=true
+    versionRange="[0.0.5,)"
     ordering="NONE"
     side="BOTH"
